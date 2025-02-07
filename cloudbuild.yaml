@@ -4,6 +4,7 @@ steps:
 images:
 - 'us-central1-docker.pkg.dev/genial-retina-450108-m4/my-repo/my-image:latest'
 options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
   logging: GCS_ONLY
 logsBucket: 'gs://mw-app-logs'
 
