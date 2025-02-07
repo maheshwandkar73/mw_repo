@@ -3,3 +3,7 @@ steps:
   args: ['build', '-t', 'us-central1-docker.pkg.dev/genial-retina-450108-m4/my-repo/my-image:latest', '.']
 images:
 - 'us-central1-docker.pkg.dev/genial-retina-450108-m4/my-repo/my-image:latest'
+options:
+  logging: GCS_ONLY
+logsBucket: 'gs://mw-app-logs'
+
